@@ -15,3 +15,7 @@ body {
   .ftimpact{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+
+  .ftmonospace{
+    font-family: monospace;
+  }
