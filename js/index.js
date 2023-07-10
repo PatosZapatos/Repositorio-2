@@ -30,16 +30,17 @@ function solicitudAJAX(params) {
         if (objXMLHttpRequest.status === 200) {
           let json = JSON.parse(objXMLHttpRequest.responseText);
           let nombre = json.name;
+          let nombreMayus = nombre.charAt(0).toUpperCase() + nombre.slice(1);
           let uriImg = json.sprites.other.home.front_default;
-  
+          
           let html =
             `<div class="card" style="width: 18rem;">
     <img src="` +
             uriImg +
             `" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">` +
-            nombre +
+      <h5 class="card-title ftimpact">` +
+            nombreMayus +
             `</h5>
       <p class="card-text"></p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -71,6 +72,7 @@ function solicitudAJAX(params) {
           if (objXMLHttpRequest.status === 200) {
             let json = JSON.parse(objXMLHttpRequest.responseText);
             let nombre = json.name;
+            let nombreMayus = nombre.charAt(0).toUpperCase() + nombre.slice(1);
             let uriImg = json.sprites.other.home.front_default;
             let html =
               `<div class="card" style="width: 18rem;">
@@ -78,9 +80,9 @@ function solicitudAJAX(params) {
               uriImg +
               `" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">` +
-              nombre +
-              `</h5>
+      <h3 class="card-title ftimpact">` +
+              nombreMayus +
+              `</h3>
       <p class="card-text"></p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>

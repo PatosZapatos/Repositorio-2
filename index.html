@@ -14,23 +14,28 @@
 
   <body onload="solicitudAJAX()">
     <div class="container">
-      <h4>
-        Consumo de api Pokemon <span class="badge bg-secondary">Ajax</span>
+      <h4 class="mb-4">
+        <img src="img/Pokemon AJAX.png" height="150" width="345">
       </h4>
-      <label for="nPokemon">Buscador</label>
+      <center>
       <input
+        class="form-control mr-sm-2 mb-3 w-25"
         type="number"
         id="nPokemon"
-        placeholder="Ingresar un numreo de Pokemon"
+        placeholder="Ingresa número de Pokémon"
         data=""
       />
-      <button onclick="buscar()">
+    </center>
+      <button onclick="buscar()" class="btn btn-primary">
         Buscar
       </button>
+      <center>
+      <div class="mb-4" id="wallet_container"></div>
+      <div id="ConteinerCard"></div>
+    </center>
     </div>
-    <div id="wallet_container"></div>
-    <div id="ConteinerCard"></div>
     <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
     
   </body>
